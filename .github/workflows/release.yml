@@ -27,7 +27,7 @@ jobs:
         uses: buddy/login@v1
         with:
           token: ${{ secrets.BUDDY_PAT }}
-          region: 'EU'
+          region: 'US'
 
       - name: Publish package to Buddy
         uses: buddy/publish-package@v1
