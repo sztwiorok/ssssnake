@@ -30,7 +30,7 @@ jobs:
           region: 'US'
 
       - name: Publish package to Buddy
-        uses: buddy/publish-package@v1
+        uses: buddy/pkg-publish@v1
         with:
           workspace: myplayground
           project: ssssnake
