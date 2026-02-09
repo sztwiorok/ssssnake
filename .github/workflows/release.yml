@@ -10,6 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup BDY CLI
+        uses: buddy/setup@v1
+        with:
+          installation_method: 'npm'
+          env: 'dev'
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
